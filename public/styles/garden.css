@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  padding: 50px;
+}
+
+#conditions-form, .manual-activation{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.display-none {
+  display: none;
+}

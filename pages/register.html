@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="../public/styles/index.css">
+  <link rel="icon" type="image/x-icon" href="../public/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../public/assets/icons/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../public/assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../public/assets/icons/android-chrome-512x512.png">
+  <link rel="manifest" href="../public/assets/icons/site.webmanifest">
+  <script src="../public/scripts/register.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <h1>Crear cuenta</h1>
+      <form id="register-form">
+        <label for="user" class="sr-only">Usuario</label>
+        <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <label for="password" class="sr-only">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Contraseña">
+        <label for="purchase" class="sr-only">ID de la maquina</label>
+        <input type="purchase" name="purchase" id="purchase" placeholder="ID de la maquina">
+        <button type="submit">Registrarse</button>
+        <p class="error display-none">Error al registrarse</p>
+      </form>
+      <p>¿Ya estás registrado? - <a href="../index.html">Iniciar sesión</a></p>
+    </div>
+  </main>
+</body>
+</html>

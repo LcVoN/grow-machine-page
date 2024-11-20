@@ -1,0 +1,25 @@
+const error = document.getElementsByClassName("error")[0];
+
+document
+  .getElementById("register-form")
+  .addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const { user, email, password, purchase } = e.target.children;
+    const res = await fetch("https://grow-machine.onrender.com/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user: user.value,
+        email: email.value,
+        password: password.value,
+        purchase: purchase.value,
+      }),
+    });
+    if (!res.ok) return error.classList.toggle("display-none", false);
+    const resJson = await res.json();
+    if (resJson.redirect) {
+      window.location.href = resJson.redirect;
+    }
+  });

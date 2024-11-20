@@ -1,0 +1,74 @@
+html {
+  background: conic-gradient(at 50% 25%, #0000 75%, #fff8f8 0),
+    conic-gradient(at 50% 25%, #0000 75%, #fff8f8 0) 32px 32px,
+    conic-gradient(at 50% 25%, #0000 75%, #fff8f8 0) calc(2 * 32px)
+      calc(2 * 32px),
+    conic-gradient(at 50% 25%, #0000 75%, #fff8f8 0) calc(3 * 32px)
+      calc(3 * 32px),
+    repeating-linear-gradient(135deg, #39663a 0 12.5%, #60a561 0 25%);
+  background-size: calc(4 * 32px) calc(4 * 32px);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  font-size: larger;
+}
+
+.form-container {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form + p,
+form p {
+  text-align: center;
+}
+
+input,
+button {
+  border-radius: 4px;
+  border: unset;
+  padding: 15px 30px;
+  font-size: larger;
+}
+
+button {
+  background-color: #60a561;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4b804c;
+}
+
+.error {
+  color: #ff6060;
+}
+
+.display-none {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

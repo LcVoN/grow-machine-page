@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/styles/home.css" />
+    <link rel="stylesheet" href="../../public/styles/garden.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../public/assets/icons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../public/assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="../../public/assets/icons/favicon-48x48.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../public/assets/icons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../../public/assets/icons/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="../../public/assets/icons/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/bb7c2ddae0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../../public/scripts/garden.js" defer></script>
+    <title>Mi Huerta</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="toggle" />
+      <div class="logo">
+        <img src="../../public/assets/img/logo.jpeg" alt="logo" class="img" />
+      </div>
+      <ul class="list">
+        <li>
+          <a href="./user.html">Inicio <i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="./profile.html">Perfil <i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="./garden.html"
+            >Mi huerta <i class="fa-solid fa-seedling"></i
+          ></a>
+        </li>
+      </ul>
+      <label for="toggle" class="icon-bars">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <h2>Condiciones de la planta</h2>
+          <p>Establezca aquí las condiciones de su planta.</p>
+          <form id="conditions-form">
+            <label for="temperature">Temperatura:</label>
+            <input
+              type="number"
+              name="temperature"
+              id="temperature"
+              placeholder="35"
+            />
+            <label for="humidity">Humedad:</label>
+            <input
+              type="number"
+              name="humidity"
+              id="humidity"
+              placeholder="0-100"
+            />
+            <label for="glow">Cantidad de luz:</label>
+            <input
+              type="number"
+              name="glow"
+              id="glow"
+              placeholder="min=0 y max=400"
+            />
+            <button type="submit">Guardar</button>
+          </form>
+          <p class="error display-none">Todos los campos son requeridos</p>
+          <p class="display-none success">
+            Las condiciones fueron guardadas correctamente
+          </p>
+        </div>
+        <div class="manual-activation">
+          <h2>Activación manual</h2>
+          <button id="fan">Ventilador</button>
+          <button id="pump">Bomba</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

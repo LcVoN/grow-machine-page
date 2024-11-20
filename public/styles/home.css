@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 5%;
+  height: 100px;
+}
+
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #60a561;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav .logo .img {
+  height: 80px;
+}
+
+nav .list {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .list li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav .list a {
+  display: block;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #60a561;
+  text-decoration: none;
+}
+
+nav .list a:hover {
+  border-bottom: 4px solid #60a561;
+}
+
+#toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-bars {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-bars:hover {
+  cursor: pointer;
+}
+
+nav .icon-bars .line {
+  width: 30px;
+  height: 5px;
+  background-color: #60a561;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width:768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .list {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  nav .list a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .list {
+    bottom: 0;
+  }
+  
+  nav .icon-bars {
+    display: block
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100svh;
+}

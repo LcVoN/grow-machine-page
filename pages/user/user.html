@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario de GrowMachine</title>
+    <link rel="stylesheet" href="../../public/styles/home.css" />
+    <link rel="icon" type="image/x-icon" href="../../public/assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../public/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../../public/assets/icons/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../public/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../public/assets/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../public/assets/icons/android-chrome-512x512.png">
+    <link rel="manifest" href="../../public/assets/icons/site.webmanifest">
+    <script
+      src="https://kit.fontawesome.com/bb7c2ddae0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../../public/scripts/user.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="toggle" />
+      <div class="logo">
+        <img src="../../public/assets/img/logo.jpeg" alt="logo" class="img" />
+      </div>
+      <ul class="list">
+        <li>
+          <a href="./user.html">Inicio <i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="./profile.html">Perfil <i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="./garden.html">Mi huerta <i class="fa-solid fa-seedling"></i></a>
+        </li>
+      </ul>
+      <label for="toggle" class="icon-bars">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <main>
+      <div class="container">
+        <div id="temperature">
+          <p>Temperatura: <span id="temperatureOutput"></span></p>
+        </div>
+        <div id="humidity">
+          <p>Humedad: <span id="humidityOutput"></span></p>
+        </div>
+        <div id="glow">
+          <p>Luz: <span id="glowOutput"></span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
